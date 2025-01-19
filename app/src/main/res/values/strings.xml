@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SusuProject</string>
+    <string name="app_name">Мои тренировки</string>
     <string name="bottom_navigation_home_title">Тренировки</string>
     <string name="bottom_navigation_exercises_title">Упражнения</string>
     <string name="bottom_navigation_add_title">Добавить</string>

@@ -2,16 +2,6 @@ package dev.susu.susuproject.presentation.days_screens.detail;
 
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -19,25 +9,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import dagger.Binds;
 import dagger.hilt.android.AndroidEntryPoint;
 import dev.susu.susuproject.R;
-import dev.susu.susuproject.databinding.DialogAddApproachBinding;
 import dev.susu.susuproject.databinding.FragmentDayDetailBinding;
-import dev.susu.susuproject.domain.model.ApproachModel;
-import dev.susu.susuproject.domain.model.DayModel;
-import dev.susu.susuproject.domain.model.ExerciseApproachModel;
-import dev.susu.susuproject.domain.model.ExerciseModel;
 import dev.susu.susuproject.presentation.BottomNavigationVisible;
 import dev.susu.susuproject.presentation.days_screens.detail.adapter.AddExerciseAdapter;
 import dev.susu.susuproject.presentation.days_screens.detail.alerts.AddExerciseDialog;
 import dev.susu.susuproject.presentation.days_screens.detail.alerts.ApproachAddDialogFragment;
-import dev.susu.susuproject.presentation.exercise_screens.detail.ExerciseDetailFragment;
 
 @AndroidEntryPoint
 public class DayDetailFragment extends Fragment {

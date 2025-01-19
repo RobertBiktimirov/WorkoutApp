@@ -61,15 +61,15 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
-    implementation("androidx.datastore:datastore-preferences-core:1.1.1")
-    implementation("androidx.datastore:datastore-rxjava2:1.1.1")
+    implementation(libs.androidx.datastore.preferences.core)
+    implementation(libs.androidx.datastore.rxjava2)
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.glide)
 
-    implementation("androidx.room:room-runtime:2.6.1")
-    kapt("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-rxjava3:2.6.1")
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.rxjava3)
 
-    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation(libs.rxandroid)
+    implementation(libs.gson)
 }
