@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/daysListFragment">
+
+    <fragment
+        android:id="@+id/dayDetailFragment"
+        android:name="dev.susu.susuproject.presentation.days_screens.detail.DayDetailFragment"
+        android:label="DayDetailFragment" />
+    <fragment
+        android:id="@+id/daysListFragment"
+        android:name="dev.susu.susuproject.presentation.days_screens.list.DaysListFragment"
+        android:label="DaysListFragment">
+        <action
+            android:id="@+id/action_daysListFragment_to_dayDetailFragment"
+            app:destination="@id/dayDetailFragment"
+            >
+            <argument
+                android:name="day_id"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseListFragment"
+        android:name="dev.susu.susuproject.presentation.exercise_screens.list.ExerciseListFragment"
+        android:label="ExerciseListFragment">
+
+        <action
+            android:id="@+id/action_exerciseListFragment_to_exerciseDetailFragment"
+            app:destination="@id/exerciseDetailFragment">
+            <argument
+                android:name="exerciseIdKey"
+                app:argType="long" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="dev.susu.susuproject.presentation.add_screen.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_dayDetailFragment"
+            app:destination="@id/dayDetailFragment">
+            <argument
+                android:name="day_id"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_addFragment_to_exerciseDetailFragment"
+            app:destination="@id/exerciseDetailFragment">
+            <argument
+                android:name="exerciseIdKey"
+                app:argType="long" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dev.susu.susuproject.presentation.settings_screen.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/exerciseDetailFragment"
+        android:name="dev.susu.susuproject.presentation.exercise_screens.detail.ExerciseDetailFragment"
+        android:label="ExerciseDetailFragment" />
+</navigation>

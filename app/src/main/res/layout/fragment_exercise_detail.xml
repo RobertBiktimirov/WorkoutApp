@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/back_primary"
+    android:fillViewport="true"
+    tools:background="@color/back_primary_light">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.days_screens.detail.DayDetailFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/close_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/label_tertiary" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Сохранить"
+            android:textColor="?attr/color_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/close_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/close_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exercise_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/exercise"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintTop_toBottomOf="@id/close_icon" />
+
+        <Spinner
+            android:id="@+id/exercise_type"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:spinnerMode="dropdown"
+            tools:listitem="@layout/spinner_item"
+            app:layout_constraintTop_toBottomOf="@id/exercise_image" />
+
+        <EditText
+            android:id="@+id/exercise_title"
+            style="@style/expandedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:hint="Название упражнения"
+            android:importantForAutofill="no"
+            android:inputType="text|textMultiLine"
+            android:maxLines="3"
+            android:minHeight="50dp"
+            android:minLines="1"
+            android:padding="16dp"
+            android:textColor="?attr/label_primary"
+            android:textColorHint="?attr/label_tertiary"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/exercise_type"
+            tools:text="Жим лежа" />
+
+
+        <EditText
+            android:id="@+id/exercise_desc"
+            style="@style/expandedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:hint="Описания упражнения"
+            android:importantForAutofill="no"
+            android:inputType="text|textMultiLine"
+            android:minHeight="100dp"
+            android:minLines="1"
+            android:padding="16dp"
+            android:textColor="?attr/label_primary"
+            android:textColorHint="?attr/label_tertiary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/delete"
+            app:layout_constraintTop_toBottomOf="@id/exercise_title"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:drawableStart="@drawable/baseline_delete_24"
+            android:textSize="24sp"
+            android:textColor="#F80707"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Удалить"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

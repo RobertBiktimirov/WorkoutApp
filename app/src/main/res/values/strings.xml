@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SusuProject</string>
+    <string name="bottom_navigation_home_title">Тренировки</string>
+    <string name="bottom_navigation_exercises_title">Упражнения</string>
+    <string name="bottom_navigation_add_title">Добавить</string>
+    <string name="bottom_navigation_setting_title">Настройки</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

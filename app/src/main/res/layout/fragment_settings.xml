@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/back_primary"
+    tools:context=".presentation.settings_screen.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/change_theme"
+            style="@style/robotoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/item_day_background"
+            android:gravity="start"
+            android:paddingVertical="16dp"
+            android:paddingStart="24dp"
+            android:text="Сменить тему"
+            android:textColor="?attr/label_primary" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/download_data"-->
+<!--            style="@style/robotoText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:background="@drawable/item_day_background"-->
+<!--            android:gravity="start"-->
+<!--            android:paddingVertical="16dp"-->
+<!--            android:paddingStart="24dp"-->
+<!--            android:text="Загрузить данные с другого устройства"-->
+<!--            android:textColor="?attr/label_primary" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/upload_data"-->
+<!--            style="@style/robotoText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:background="@drawable/item_day_background"-->
+<!--            android:gravity="start"-->
+<!--            android:paddingVertical="16dp"-->
+<!--            android:paddingStart="24dp"-->
+<!--            android:text="Выгрузить данные"-->
+<!--            android:textColor="?attr/label_primary" />-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/item_day_background"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:elevation="4dp">
+
+    <!-- Заголовок карточки -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/label_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="7 неделя Жим на раз 26.12.24"/>
+
+    <!-- Описание тренировки -->
+    <TextView
+        android:id="@+id/exercisesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/label_tertiary"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        tools:text="Жим лёжа 110×0\n110×0\n100×2\nЖим гантелей под наклоном 35×10, 35... "
+        android:layout_marginTop="4dp"/>
+
+    <!-- Дата тренировки -->
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/label_tertiary"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="8dp"
+        tools:text="26.12.2024"/>
+
+</LinearLayout>

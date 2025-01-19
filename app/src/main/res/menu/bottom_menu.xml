@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/bottom_navigation_home_title"
+        android:icon="@drawable/bottom_navigation_home_icon"/>
+
+    <item
+        android:id="@+id/nav_exercises"
+        android:title="@string/bottom_navigation_exercises_title"
+        android:icon="@drawable/bottom_navigation_exercises_icon"/>
+
+    <item
+        android:id="@+id/nav_add"
+        android:title="@string/bottom_navigation_add_title"
+        android:icon="@drawable/bottom_navigation_add_icon"/>
+
+    <item
+        android:id="@+id/nav_setting"
+        android:title="@string/bottom_navigation_setting_title"
+        android:icon="@drawable/bottom_navigationg_settings_icon"/>
+</menu>

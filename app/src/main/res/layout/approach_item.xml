@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+
+    <EditText
+        android:id="@+id/weight"
+        style="@style/robotoText"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Кол-во"
+        android:inputType="numberDecimal|numberSigned"
+        android:maxLines="1"
+        android:textColor="?attr/label_primary"
+        android:textSize="16sp"
+        tools:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:gravity="center"
+        android:text="x"
+        android:textColor="?attr/label_primary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/count"
+        style="@style/robotoText"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Вес"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="?attr/label_primary"
+        android:textSize="16sp"
+        tools:text="" />
+
+</LinearLayout>
