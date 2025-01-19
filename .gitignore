@@ -1,0 +1,51 @@
+# Gradle files
+.gradle/
+build/
+local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/gradle.xml
+/.idea/gradle/workspace.xml
+/.idea/misc.xml
+/.idea/modules.xml
+
+# Android Studio navigation state
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/capture.xml
+
+# MacOS
+.DS_Store
+
+# Android Studio logs
+*.log
+
+# Java class files
+*.class
+
+# Generated files
+*.iml
+
+# Java specific
+*.jar
+*.war
+*.ear
+*.class
+
+# Android specific
+*.apk
+*.ap_
+*.dex
+*.so
+*.hprof
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Keystores
+*.jks
+
+# Kotlin specific
+*.kotlin_metadata
+
+# End of file
